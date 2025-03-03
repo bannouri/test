@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informations d'Inscription</title>
+</head>
+<body>
+    <h1>Merci pour votre inscription !</h1>
+    <p>Voici vos informations d'inscription :</p>
+    <p><strong>Nom :</strong> <span id="nom_utilisateur"></span></p>
+    <p><strong>Email :</strong> <span id="email_utilisateur"></span></p>
+
+    <script>
+    
+        var nom = localStorage.getItem('nom_utilisateur');
+        var email = localStorage.getItem('email_utilisateur');
+
+        document.getElementById('nom_utilisateur').textContent = nom;
+        document.getElementById('email_utilisateur').textContent = email;
+    </script>
+</body>
+</html>
